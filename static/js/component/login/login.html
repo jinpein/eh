@@ -1,0 +1,33 @@
+<section ng-controller="LoginController">
+  <div class="container">
+    <div class="row">
+      <div class="layout-container">
+        <div class="layout">
+          <div class="layout__column">
+            <div class="form-wrapper">
+              <div class="card">
+                <center><h4>Login to E-Health</h4></center>
+                <form action ="" method="POST">
+                  <div class="form-group">
+                    <label for="#username-login">Username</label>
+                    <input type="text" class="form-control" name="username" value="{{request.form.username}}"/>
+                  </div>
+                  <div class="form-group">
+                    <label for="#password-login">Password</label>
+                    <input type="password" class="form-control" name="password" value="{{request.form.password}}"/>
+                  </div>
+                  <div class="form-group">
+                    <center>
+                      <button class="btn btn-primary" id="login-btn" type="submit" value="login">Login</button> OR
+                      <button class="btn btn-primary" id="register-btn" ng-click="registerButton()">Register</button>
+                    </center>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>     
+    </div>
+  </div>
+</section>

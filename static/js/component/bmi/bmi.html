@@ -1,0 +1,58 @@
+<section ng-controller="BmiController">
+    <div class="container">
+        <center>        
+            <div id="progress-bar-wrapper">
+                <ul id="progress-bar-two">
+                    <li class="active">Main</li>
+                    <li class="active-two">Test BMI</li>
+                    <li class="active-three">Test Blood Pressure</li>
+                    <li class="active-four">Body Temperature</li>
+                    <li class="active-five">Test Blood Sugar</li>
+                    <li class="active-six">Eye Acuity Test</li>
+                    <li>Print Results</li>
+                </ul>
+            </div>
+        </center>
+        
+        <center>
+            <div id="form-wrapper">
+                <h2>Body Mass Index</h2>
+                <div class="col-lg-12">
+                    <div id="info-wrapper">
+                        <h6>Body mass index is not a perfect measurement, but it's used consistently and is easily understood. That’s why the calculation behind BMI, first developed in the 1800’s, is still used today. There are ongoing discussions focussed on making BMI more relevant in our data-rich world, but for now it's best used in conjunction with more modern tests such as body fat percentage.</h6>
+                        <h6>BMI is simply your weight per square metre and it’s a good way of factoring in your muscle, bone and fat mass into the equation. Unlike many other measurements, it works for both men and women without changing the calculation.</h6>
+                        <h5>The calculation</h5>
+                        <center><img src="../static/img/bmi-formula.PNG" id="bmi-formula-img" class="img-fluid" alt="Responsive image"></center>
+
+                        <h5>The results</h5>
+                        <h6>Your BMI result will fall into one of four categories*:</h6>
+                        <center><img src="../static/img/bmi-chart.jpg" id="bmi-chart-img" class="img-fluid" alt="Responsive image"></center>
+                        
+                        <h5>Underweight</h5>
+                        <h6>You may not be eating enough or an underlying illness could be preventing you from gaining weight. Underweight adults are at increased risk of weakened immune system, fragile bones and may experience low energy levels. If you struggle to gain weight, see a GP.</h6>
+
+                        <h5>Normal</h5>
+                        <h6>Adults in the normal range are considered to have a healthy weight. Maintain it with regular exercise and a healthy diet.</h6>
+
+                        <h5>Overweight</h5>
+                        <h6>A high proportion of adults fall into the overweight category. It may feel unfair to get a result like this. There are factors that may cause your BMI to be inaccurate - if you have high muscle bulk for example. That's why it's important to look at a range of measurements to get a better overall picture of your health. However, this is a good time to make an honest assessment of your lifestyle to see if you should reduce calories in your diet or increase the calories you burn with exercise. The higher you fall within this bracket the higher your risk of cardiovascular disease.</h6>
+
+                        <h5>Obese</h5>
+                        <h6>Being obese significantly increases your risk of developing heart disease and type 2 diabetes. If you fall into this category you should see a GP and ask their advice on bringing down your weight.</h6>
+
+                    </div>
+                </div>
+                <div id="btn-wrapper">
+                    <a class="btn btn-primary" id="back-btn" ng-click="backButton()">Back</a>
+                    <a class="btn btn-primary" id="test-btn" ng-click="testButton()">Test</a>
+                    <a class="btn btn-primary" id="next-btn" ng-click="nextButton()">Next</a>
+                    <a class="btn btn-primary" ng-click="calculateButton()">Calculate</a>
+                    <input type="text" ng-model="result">
+                </div>
+                
+                
+            </div>
+            
+        </center>
+    </div>
+</section>

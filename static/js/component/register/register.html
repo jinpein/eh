@@ -1,0 +1,68 @@
+<section ng-controller="RegisterController">
+	<div class="container">
+		<div class="row">
+			<div class="layout-container">
+				<div class="layout">
+					<div class="layout__column">
+						<div class="form-wrapper">
+							<div class="card">
+							<center><h3>Sign Up to E-Health</h3></center>
+								
+							<form action="" method="POST" >
+								<div class="form-group">
+									<label for="#username-register">Username</label>
+									<input class="form-control" type="text" ng-model='client.username' required="">
+								</div>
+
+								<div class="form-group">
+									<label for="#password-register">Password</label>
+									<input class="form-control" type="password" ng-model='client.password' required="">
+								</div>
+								
+								<div class="form-group">
+									<label for="#cpassword-register">Confirm Password</label>
+									<input class="form-control" type="password" ng-model='client.cpassword' required="">
+								</div>
+
+								<div class="form-group">
+									<label for="#fname-register">First Name</label>
+									<input class="form-control" type="text" ng-model='client.fname' required="">
+								</div>
+
+								<div class="form-group">
+									<label for="#lname-register">Last Name</label>
+									<input class="form-control" type="text" ng-model='client.lname' required="">
+								</div>
+								
+								<div class="form-group">
+									<label for="#email-register">Email Address</label>
+									<input class="form-control" type="email" ng-model='client.email' required="">
+								</div>
+
+								<div class="form-group">
+									<label for="#age-register">Age</label>
+									<input class="form-control" type="number" ng-model='client.age' required="">
+								</div>
+								
+								<div class="form-group">
+									<label for="#gender-register">Gender</label>
+									<select class="form-control" type="text" ng-model='client.gender' required>
+										<option selected hidden value="" >Select Gender</option>
+										<option value="m">Male</option>
+										<option value="f">Female</option>
+									</select>
+								</div>
+								
+								<center><button class="btn btn-primary" type="submit">Confirm Sign Up</button></center>
+								<center>If already have an account, sign in <a href="" ng-click="loginButton()">here</a>.</center>
+							</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>     
+		</div>
+	</div>
+</section>
+			
+	

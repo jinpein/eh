@@ -1,0 +1,62 @@
+<section ng-controller="EyeController">
+    <div class="container">
+        <center>        
+            <div id="progress-bar-wrapper">
+                <ul id="progress-bar-six">
+                    <li class="active">Main</li>
+                    <li class="active-two">Test BMI</li>
+                    <li class="active-three">Test Blood Pressure</li>
+                    <li class="active-four">Body Temperature</li>
+                    <li class="active-five">Test Blood Sugar</li>
+                    <li class="active-six">Eye Acuity Test</li>
+                    <li>Print Results</li>
+                </ul>
+            </div>
+        </center>
+        
+        <center>
+            <div id="form-wrapper">
+                <h2>Visual Acuity Test using Traditional Snellen Chart</h2>
+                
+                    <div class="col-lg-12">
+                        <div id="info-wrapper">
+
+                                <h4>Visual Acuity Testing</h4>
+                                <h6>When testing for visual acuity, the patient covers one eye and reads aloud the letters on the chart, beginning at the top and moving toward the bottom. The smallest row of letters that the patient reads accurately determines visual acuity in the uncovered eye. The test is repeated with the other eye, and then with both eyes together. Visual acuity is sometimes expressed as 20/20, or a similar number, meaning the smallest letters accurately read on the chart.</h6>
+                                
+                                <h5>Results</h5>
+                                <h6>The results of your acuity exam (chart reading) will determine the quality of your eyesight. Your vision results (acuity) will be expressed as a fraction. Fractions are shown to the left of each row and identify how well you can see. If you could read clearly to the fifth line, for example, your vision will be expressed as have 20/40 vision; if you could read clearly to the seventh line, your vision will be expressed as 20/25.</h6>
+                                
+                                <h6>To interpret your reading, think of the numbers in feet. For instance, someone with 20/60 vision can read at 20 feet away what a person with normal vision could read at 60 feet away. Modern optometric exam rooms are equipped with electronic eye reading charts, making it easier to produce accurate readings.</h6>
+                                <h5>DISCLAIMER:</h5>
+                                <h6>Eye charts measure only visual acuity, which is just one component of good vision. They cannot determine if your eyes
+                                        are "working overtime" (needing to focus more than normal, which can lead to headaches and eye strain) or can they
+                                        determine if your eyes work properly as a team for clear, comfortable binocular vision and accurate depth perception.</h6>
+                                <h6>Eye charts also cannot detect serious eye problems such as glaucoma or early diabetic retinopathy that could lead to
+                                        serious vision impairment and even blindness.</h6>
+                                <h6>Only a comprehensive eye exam performed by a licensed optometrist or ophthalmologist can determine if your eyes
+                                        are healthy and you are seeing as clearly and comfortably as possible.</h6>
+                            <!-- <h6>DIRECTIONS FOR USE</h6>
+                            <h6>For the best accuracy (and to prevent memorization), have someone assist you when testing your vision with this eye
+                            chart. If you use eyeglasses or contact lenses for driving or other distance vision tasks, wear them during the test.</h6>    
+                            1. Place the chart on a wall or easel 10 feet away.
+    2. Cover one eye with your hand, a large spoon or some other item that completely blocks the vision of the covered
+    eye. (Do not apply pressure to the covered eye, as it might affect that eye’s vision when you test it.)
+    3. Identify a line on the chart you can comfortably read. Read the letters on that line aloud. Have your assistant
+    stand near the chart and record your accuracy.
+    4. Continue trying to read the letters on each successively smaller line. Do not squint.
+    5. Have your assistant stop you when you fail to correctly identify at least 50 percent of the letters on a line.
+    6. Switch to the other eye and repeat. -->
+                        </div>
+                </div>
+                
+                <div id="btn-wrapper">
+                    <a class="btn btn-primary" id="back-btn" ng-click="backButton()">Back</a>
+                    <a class="btn btn-primary" id="test-btn" ng-click="testButton()">Test</a>
+                    <a class="btn btn-primary" id="next-btn" ng-click="nextButton()">Next</a>
+                </div>
+            </div>
+            
+        </center>
+    </div>
+</section>
